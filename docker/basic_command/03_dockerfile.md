@@ -108,7 +108,7 @@ $ docker run -it --name clientContainer -d -p 3000:3000 -v ./:/app /app/node_mod
 | ------ | ----------------------------------------------------------- | -------------------------------------- |
 | -d     | 보통 데몬 모드라고 부르며 컨테이너가 백그라운드로 실행된다. | -d                                     |
 | -p     | 호스트와 컨테이너의 포트를 연결                             | -p 3000:3000                           |
-| -v     | 호스트와 컨테이너의 디렉토리를 연결 (마운트)                | -v ./client/:/app /app/node_modules    |
+| -v     | 호스트와 컨테이너의 디렉토리를 연결 (마운트)                | -v ./client/:/app -v /app/node_modules    |
 | -e     | 컨테이너 내에서 사용할 환경변수 설정                        | -e MYSQL_ROOT_PASSWORD=examplepassword |
 | –-name | 컨테이너 이름 설정                                          | --name jonsoku                         |
 | -–rm   | 프로세스 종료시 컨테이너 자동 제거                          | --rm                                   |

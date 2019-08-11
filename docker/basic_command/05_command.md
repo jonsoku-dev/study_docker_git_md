@@ -91,9 +91,15 @@ $ docker rmi $(docker images -q)
 $ docker restart [container id or name]
 ```
 
+<<<<<<< HEAD
 # 컨테이너 안에 디펜던시 설치
 
 ```bash
 $ docker-compose run express npm install nodemon --save-dev
 
+=======
+# $(pwd) : 현재 path
+```
+$ docker run -v $(pwd)/in:/app/in
+>>>>>>> 8fbf7059f09eb8a86b62e3357b0f59c8264f17b7
 ```
