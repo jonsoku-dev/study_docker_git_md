@@ -90,3 +90,10 @@ $ docker rmi $(docker images -q)
 ```bash
 $ docker restart [container id or name]
 ```
+
+# 컨테이너 안에 디펜던시 설치
+
+```bash
+$ docker-compose run express npm install nodemon --save-dev
+
+```
