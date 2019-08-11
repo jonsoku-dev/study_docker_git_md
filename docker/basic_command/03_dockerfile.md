@@ -13,6 +13,10 @@ $ cd client
 $ touch Dockerfile
 ```
 
+# tree
+
+<img src="../img/04/docker_file_tree.png">
+
 # Dockerfile
 
 docker hub에서 image를 불러오는 것이 아니라, 자신이 직접 작성하는 것
