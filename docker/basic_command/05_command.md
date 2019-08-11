@@ -90,3 +90,8 @@ $ docker rmi $(docker images -q)
 ```bash
 $ docker restart [container id or name]
 ```
+
+# $(pwd) : 현재 path
+```
+$ docker run -v $(pwd)/in:/app/in
+```
